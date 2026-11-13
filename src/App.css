@@ -86,7 +86,7 @@ button:focus-visible, input:focus-visible, summary:focus-visible, a:focus-visibl
 .floating-tag { position: absolute; bottom: 36px; right: -8px; z-index: 2; padding: 16px 22px; border: 1px solid #594b36; border-radius: 12px; background: #252532; color: var(--orange); font: 13px var(--mono); box-shadow: 0 20px 45px rgba(0,0,0,.5); transform: rotate(-7deg); }
 .floating-tag strong { color: #ffdaa4; }
 .modes-section { padding: 34px 0 55px; }
-.section-topline { display: flex; justify-content: space-between; align-items: end; gap: 35px; margin-bottom: 31px; }
+.section-topline { display: flex; justify-content: space-between; align-items: flex-end; gap: 35px; margin-bottom: 31px; }
 .section-topline h2 { font-size: clamp(31px, 3vw, 42px); letter-spacing: -.05em; margin: 12px 0 0; }
 .section-topline > p { max-width: 340px; font-size: 13px; line-height: 1.75; color: var(--muted); margin: 0 0 3px; }
 .mode-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 17px; }
@@ -122,7 +122,7 @@ button:focus-visible, input:focus-visible, summary:focus-visible, a:focus-visibl
 .site-footer > span { margin-left: auto; color: #66758e; font: 10px var(--mono); letter-spacing: .5px; }
 
 .quiz-page, .results-page, .scores-page { padding: 59px 0 95px; min-height: 70vh; }
-.quiz-heading, .scores-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 28px; }
+.quiz-heading, .scores-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; margin-bottom: 28px; }
 .quiz-heading h1, .scores-heading h1 { font-size: clamp(38px,5vw,58px); letter-spacing: -.06em; margin: 13px 0 0; }
 .quiet-button { background: transparent; border: 1px solid #3b465b; border-radius: 9px; padding: 13px 16px; color: #bac4d6; font-weight: 700; font-size: 12px; }
 .quiet-button:hover { color: var(--orange); border-color: var(--orange); }
@@ -347,7 +347,7 @@ button:focus-visible, input:focus-visible, summary:focus-visible, a:focus-visibl
   .scores-heading { align-items: flex-start; flex-direction: column; }
   .scores-toolbar { flex-direction: column; align-items: stretch; }
   .filters button { padding: 9px 10px; }
-  .clear-link { align-self: end; }
+  .clear-link { align-self: flex-end; }
 }
 @media(prefers-reduced-motion:reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
