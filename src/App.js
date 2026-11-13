@@ -155,6 +155,10 @@ function App() {
   }
 
   function openScores() {
+    if (view === 'quiz' && game && game.status === 'active') {
+      if (!window.confirm('Leave this challenge? Your current run will not be saved.')) return;
+      setGame(null);
+    }
     setScoreFilter('all');
     setView('scores');
     window.scrollTo(0, 0);
@@ -205,7 +209,7 @@ function App() {
                 <div className="code-window">
                   <div className="window-bar"><span className="window-dots"><i /><i /><i /></span><span>challenge.js</span><span className="window-code">JS</span></div>
                   <div className="window-body">
-                    <div className="window-comment">// Ready for a challenge?</div>
+                    <div className="window-comment">{'// Ready for a challenge?'}</div>
                     <div><span className="syntax-purple">const</span> developer = {'{'}</div>
                     <div className="indent">curiosity: <span className="syntax-blue">true</span>,</div>
                     <div className="indent">skills: <span className="syntax-yellow">'growing'</span>,</div>
